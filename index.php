@@ -65,7 +65,7 @@ if(isset($_POST["add"])){
 	$tdeadline = $_POST["tdeadline"];
 
 	$query = "INSERT INTO tb_to_do VALUES 
-	('', '$tname', '$tdetails', '$tsubject', '$tpriority', '$tdeadline', 'Sudah')";
+	('', '$tname', '$tdetails', '$tsubject', '$tpriority', '$tdeadline', 'Belum')";
 
 	mysqli_query($conn, $query);
 	header('Location:index.php');
